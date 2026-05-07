@@ -1,0 +1,11 @@
+{
+  "name": "tiger-ux-dashboard",
+  "version": "1.0.0",
+  "description": "Modern AI Dashboard UI",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "Tiger UX",
+  "license": "MIT"
+}
