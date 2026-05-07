@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(135deg, #0a0e1a, #1a2333);
+    color: #00ff9d;
+    text-align: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+header {
+    background: rgba(30, 41, 59, 0.95);
+    padding: 25px;
+    border-bottom: 3px solid #00ffff;
+    box-shadow: 0 0 20px #00ffff;
+}
+
+h1 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.neon {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff,
+                 0 0 20px #ff00ff;
+    animation: neon-flicker 1.5s infinite alternate;
+}
+
+@keyframes neon-flicker {
+    0% { opacity: 0.9; }
+    100% { opacity: 1; }
+}
+
+.subtitle {
+    color: #00ccff;
+    margin-top: 8px;
+    font-size: 1.1rem;
+}
+
+nav {
+    background: #111827;
+    padding: 15px;
+}
+
+nav a {
+    color: #00ffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+.card {
+    background: rgba(30, 41, 59, 0.85);
+    margin: 25px auto;
+    padding: 25px;
+    max-width: 900px;
+    border-radius: 12px;
+    border: 1px solid #00ffff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+.main {
+    font-size: 1.3rem;
+}
+
+.status {
+    margin-top: 20px;
+}
+
+.risk-high {
+    background: #ff0033;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+footer {
+    margin-top: 50px;
+    padding: 15px;
+    color: #666;
+    font-size: 0.9rem;
+}
